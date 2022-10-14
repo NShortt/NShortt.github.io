@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Page containing the finish Lab3 for MODE. Built using bootstrap template">
+    <meta name="author" content="Nicholas Shortt">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Lab 3</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/blog/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <!-- NAV BAR-->
+        <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between">
+                <a class="p-2 text-muted" href="/index.html">Home</a>
+                <a class="p-2 text-muted" href="/course.html">Course Work</a>
+            </nav>
+        </div>
+    </div>
+
+    <main role="main" class="container">
+        <div class="row">
+
+            <!-- Content Here-->
+            <div class="col-md-8 blog-main">
+                <h1>Lab 3 XML</h1>
+                <h2>Task</h2>
+                <p>The task given was to computerize the projects of an organization using XML.  
+                    I was given required elements like company, projects, clients, team, and more,
+                     as well as criteria these elements need like being able to have no or multiple 
+                     clients for a single project.  I started off by analyzing the outlining document 
+                     before then starting a XML tree diagram.
+                </p>    
+                <br>
+                <h2>Diagram</h2>
+                <p>Below (Figure 1) is the tree diagram created from the information provide about what 
+                    the organization need for this computerization.
+                    <img src="/image/projects.jpg" alt="XML-Diagram"><em>Figure 1.</em>
+                </p>
+                <br>
+                <h2>DTD</h2>
+                <p>Once the diagram was created, I proceed with creating a DTD for the XML (Figure 2).
+                    A DTD is the layout of rules for an XML object.  It is in these files that we 
+                    can specify what child elements are needed, what content the element has, and what
+                    attribute the element needs.
+                    <img src="/image/projectsDTD.jpg" alt="XML-DTD"><em>Figure 2.</em>
+
+                </p>      
+                <br>
+                <h2>XML</h2>
+                <p>After creating the diagram and the DTD it was finally time to create the XML file.
+                    In it I specified that this was an XML file and was using the DTD I created.
+                    After this I created some dummy data to show that the DTD work by creating the element.  
+                    Below (Figure 3 and Figure 4) you will see the create XML with 2 projects 1 with 2 clients
+                    and 2 teams while the other is only a team. 
+                    <img src="/image/projectsXML1.jpg" alt="XML-1"><em>Figure 3.</em>
+                    <img src="/image/projectsXML2.jpg" alt="XML-2"><em>Figure 4.</em>
+                    
+                </p>
+                <br>
+                <h2>Validation</h2>    
+                <p>After creating a test XML file, it was time to run it against a validator.  I used a
+                    validator online called XML Validation.  I provided it with my XML file and DTD 
+                    file and was informed that the XML was valid (Figure 5). 
+
+                    <img src="/image/projectsValidation.jpg" alt="XML-Validated"><em>Figure 5.</em>
+
+                </p>  
+                <br>
+                <h2>References</h2>
+                <p>XML Validator (n/a). XML Validations by Theano GmbH. From 
+                    <a href="https://www.xmlvalidation.com">https://www.xmlvalidation.com</a>
+                </p>               
+            </div>
+
+            <!-- SIDE BAR-->
+            <aside class="col-md-4 blog-sidebar">
+                <div class="p-3 mb-3 bg-light rounded">
+                    <h4 class="font-italic">About</h4>
+                    <p class="mb-0">
+                        Research done on mobile baking and mobile phones
+                    </p>
+                </div>
+
+                <div class="p-3">
+                    <h4 class="font-italic">Labs</h4>
+                    <ol class="list-unstyled mb-0">
+                        <li>
+                            <a href="/lab1.html">Lab 1</a>
+                        </li>
+                        <li>
+                            <a href="/lab2.html">Lab 2</a>
+                        </li>
+                        <li>
+                            <a href="/lab3.html">Lab 2</a>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="p-3">
+                    <h4 class="font-italic">Classword</h4>
+                    <ol class="list-unstyled mb-0">
+                        <li>
+                            None Yet
+                        </li>
+                    </ol>
+                </div>
+            </aside><!-- /.blog-sidebar -->
+
+        </div><!-- /.row -->
+
+        <!-- FOOTER -->
+        <footer class="blog-footer">
+            <p>Template used built by <a href="https://getbootstrap.com/">Bootstrap</a> by <a
+                    href="https://twitter.com/mdo">@mdo</a>.</p>
+            <p>
+                <a href="#">Back to top</a>
+            </p>
+        </footer>
+    </main><!-- /.container -->
+
+
+</body>
+
+</html>
